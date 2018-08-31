@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+    <RelativeLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image"
+        />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:text=""
+    android:textColor="#370028"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:background="#CECECE"
+    android:gravity="center"
+    android:layout_below="@+id/image"
+        android:id="@+id/cadre_text"
+        />
+
+    <LinearLayout
+        style="@style/ligne_bouton"
+        android:layout_below="@+id/cadre_text"
+        android:id="@+id/layou1">
+        <Button
+            android:id="@+id/sept"
+            style="@style/style_bouton"
+            android:layout_marginLeft="10dp"
+            android:onClick=""
+            android:text=" 7 " />
+        <Button
+            android:id="@+id/huit"
+            style="@style/style_bouton"
+            android:text=" 8 " />
+        <Button
+            android:id="@+id/neuf"
+            style="@style/style_bouton"
+            android:text=" 9 "
+ />
+        <Button
+            android:id="@+id/division"
+            style="@style/style_bouton"
+            android:text=" / "/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/ligne_bouton"
+        android:layout_below="@+id/layou1"
+        android:id="@+id/layou2">
+        <Button
+            android:id="@+id/quatre"
+            android:text=" 4 "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/cinq"
+            android:text=" 5 "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/six"
+            android:text=" 6 "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/multiplication"
+            android:text=" * "
+            style="@style/style_bouton" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/ligne_bouton"
+        android:layout_below="@+id/layou2"
+        android:id="@+id/layou3">
+        <Button
+            android:id="@+id/un"
+            android:text=" 1 "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/deux"
+            android:text=" 2 "
+            style="@style/style_bouton" />
+        <Button
+            android:id="@+id/trois"
+            android:text=" 3 "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/soustraction"
+            android:text=" - "
+            style="@style/style_bouton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layou3"
+        android:id="@+id/layou4"
+        style="@style/ligne_bouton">
+        <Button
+            android:id="@+id/zero"
+            android:text=" 0 "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/point"
+            android:text=" . "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/egal"
+            android:text=" = "
+            style="@style/style_bouton"/>
+        <Button
+            android:id="@+id/addition"
+            android:text=" + "
+            style="@style/style_bouton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layou4"
+        android:id="@+id/layou5"
+        style="@style/ligne_bouton">
+        <Button
+            android:id="@+id/clear"
+            android:text=" clear "
+            style="@style/style_bouton"
+            />
+        <Button
+            style="@style/style_bouton"
+            android:id="@+id/delete"
+            android:text=" delete " />
+    </LinearLayout>
+
+</RelativeLayout>
