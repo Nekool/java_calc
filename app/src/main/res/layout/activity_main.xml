@@ -44,7 +44,7 @@
             android:id="@+id/sept"
             style="@style/style_bouton"
             android:layout_marginLeft="10dp"
-            android:onClick=""
+            android:onClick="onClickDiv"
             android:text=" 7 " />
         <Button
             android:id="@+id/huit"
